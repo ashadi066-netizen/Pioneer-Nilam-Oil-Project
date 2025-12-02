@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pioneer Nilam Oil Project | Produsen Nilam & Patchouli Oil Indonesia</title>
+  <meta name="description" content="Pioneer Nilam Oil Project adalah produsen nilam dan patchouli oil Indonesia. Menyediakan daun nilam berkualitas, produksi berkelanjutan, dan pasokan untuk industri parfum & kosmetik." />
+  <meta name="keywords" content="nilam, patchouli oil, oil nilam, budidaya nilam, produsen nilam indonesia, minyak nilam, daun nilam" />
+  <meta name="author" content="Pioneer Nilam Oil Project" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    .leaf-cards .kpi{clip-path:ellipse(70% 55% at 50% 45%);background:linear-gradient(135deg,var(--leaf1),var(--leaf2));color:#033}
+    .kpi:hover{transform:scale(1.05);transition:.3s}
+    nav a:hover{color:var(--leaf1);transform:translateY(-2px)}
+    .btn:hover{filter:brightness(1.1)}
+    body.light{background:linear-gradient(180deg,#ecfeff,#f0fdf4);color:#032}
+    body.light .card{background:#ffffff;border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);border:1px solid rgba(2,44,34,0.08)}
+    .toggle{cursor:pointer;font-size:13px;border:1px solid rgba(255,255,255,0.2);padding:6px 10px;border-radius:10px;margin-left:10px}
+    .chart{display:flex;gap:4px;height:90px;align-items:flex-end;margin-top:10px}
+    .bar{flex:1;background:linear-gradient(180deg,#4ade80,#16a34a);border-radius:6px;animation:grow 1.5s ease}
+    @keyframes grow{from{height:0}to{height:100%}}
+    body::before{content:"";position:fixed;inset:0;background:url('https://images.unsplash.com/photo-1617761649229-6c0f1bd226a5?q=80&w=1600&auto=format&fit=crop')('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;opacity:.08;z-index:-1}
+
+    /* Simple modern CSS - single file so ready to publish */
+    :root{
+      --bg:#ecfdf5; --card:#ffffff; --muted:#475569; --accent:#15803d; --glass: rgba(0,0,0,0.03);
+      --maxw:1100px; --radius:14px;
+      --shadow: 0 8px 24px rgba(15,23,42,0.08);
+      --glass-2: rgba(0,0,0,0.02);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#0f172a;background:linear-gradient(180deg,#ecfdf5 0%, #d1fae5 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:var(--maxw);margin:40px auto;padding:24px}
+
+    header{position:sticky;top:0;backdrop-filter:blur(8px);background:linear-gradient(90deg,#16a34a,#4ade80);padding:10px;border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:54px;height:54px;background:linear-gradient(135deg,#22c55e,#84cc16);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;color:#064e3b;box-shadow:0 4px 12px rgba(0,0,0,.2)}
+    h1{margin:0;font-size:20px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:28px}
+    .card{background:linear-gradient(180deg,var(--glass),transparent);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,0.03)}
+    .hero-left h2{font-size:28px;margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .cta{margin-top:16px;display:flex;gap:10px}
+    .btn{padding:10px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    /* KPI cards */
+    .kpis{display:flex;gap:14px;margin-top:10px}
+    .kpi{flex:1;padding:14px;border-radius:10px;background:var(--card);}
+    .kpi h3{margin:0;font-size:14px;color:var(--muted)}
+    .kpi .value{font-size:20px;margin-top:6px}
+
+    /* Services & About */
+    .grid-2{display:grid;grid-template-columns:1fr 420px;gap:18px;margin-top:20px}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .service{padding:12px;border-radius:10px;background:var(--glass-2);border:1px solid rgba(255,255,255,0.02)}
+
+    /* Team & Contact */
+    .footer-grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:20px}
+    .contact form{display:flex;flex-direction:column;gap:8px}
+    input,textarea{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    textarea{min-height:100px}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero,.grid-2{grid-template-columns:1fr;}
+      .kpis{flex-direction:column}
+      .footer-grid{grid-template-columns:1fr}
+    }
+
+    /* subtle footer */
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+  </style>
+  <!-- OpenGraph & SEO -->
+  <meta property="og:title" content="Pioneer Nilam Oil Project | Produsen Nilam & Patchouli Oil Indonesia" />
+  <meta property="og:description" content="Produsen nilam & patchouli oil Indonesia. Budidaya berkelanjutan, kontrol mutu, dan pasokan untuk industri." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://username.github.io/repo" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1617761649229-6c0f1bd226a5?w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Search Console: isi konten setelah verifikasi -->
+  <meta name="google-site-verification" content="PASTE_KODE_DARI_GSC_DI_SINI" />
+
+  <!-- Schema.org: Organization -->
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Pioneer Nilam Oil Project",
+    "url": "https://username.github.io/repo",
+    "logo": "https://username.github.io/repo/logo.png",
+    "description": "Produsen nilam & patchouli oil Indonesia dengan praktik berkelanjutan.",
+    "address": {"@type": "PostalAddress","streetAddress": "Jl. Contoh No. 12","addressLocality": "Kabupaten","addressRegion": "Provinsi","addressCountry": "ID"},
+    "contactPoint": [{"@type": "ContactPoint","telephone": "+62-812-3456-7890","contactType": "sales"}]
+  }</script>
+</head>
+<body>
+<button id="themeToggle" style="position:fixed;bottom:20px;right:20px;padding:10px 14px;border-radius:999px;background:#16a34a;color:white;border:none;box-shadow:0 8px 24px rgba(0,0,0,.25);cursor:pointer;z-index:999">🌗 Mode</button>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">🌿</div>
+        <div>
+          <h1>Pioneer Nilam Oil Project — Produsen Nilam & Patchouli Oil Indonesia</h1>
+          <div class="small">Pemasok daun nilam premium & ekstrak — Berbasis kualitas dan keberlanjutan</div>
+        </div>
+      </div>
+      <nav style="display:flex;align-items:center">
+        <a href="#about">🌿 Tentang</a>
+        <a href="#services">🍃 Layanan</a>
+        <a href="#dashboard">📊 Dashboard</a>
+        <a href="#contact">📞 Kontak</a>
+      </nav>
+    <div class="toggle" onclick="document.body.classList.toggle('light')">🌞 / 🌙 Mode</div></header>
+
+    <section class="hero" style="background:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;border-radius:18px;overflow:hidden;position:relative">
+      <div class="hero-left card">
+        <h2>🌿 Produsen Nilam & Patchouli Oil Berkelanjutan di Indonesia</h2>
+        <p class="muted">Pioneer Nilam Oil Project adalah produsen nilam & patchouli oil Indonesia yang memasok daun nilam berkualitas untuk industri parfum, kosmetik, dan farmasi. Kami menerapkan budidaya berkelanjutan, pengolahan higienis, serta kontrol mutu ketat untuk menjaga aroma dan konsistensi produk.</p>
+
+        <div class="kpis leaf-cards" style="margin-top:16px">
+          <div class="kpi">
+            <h3>Volume Panen Tahun Ini</h3>
+            <div class="value">12.400 kg</div>
+            <div class="small">Perkiraan total panen (kg)</div>
+          </div>
+          <div class="kpi">
+            <h3>Klien Aktif</h3>
+            <div class="value">18+ perusahaan</div>
+            <div class="small">Distributor & pabrik</div>
+          </div>
+          <div class="kpi">
+            <h3>Rasio Keberlanjutan</h3>
+            <div class="value">92%</div>
+            <div class="small">Praktik ramah lingkungan</div>
+          </div>
+        </div>
+
+        <div class="cta">
+          <button class="btn btn-primary">Hubungi Penjualan</button>
+          <button class="btn btn-ghost">Unduh Brosur (PDF)</button>
+        </div>
+      </div>
+
+      <aside class="card" style="display:flex;flex-direction:column;gap:12px;align-items:stretch">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div class="small">Status Operasional</div>
+            <strong>Aktif — Produksi berjalan</strong>
+          </div>
+          <div class="small">Terakhir diupdate: 2025-12-02</div>
+        </div>
+
+        <div style="margin-top:6px">
+          <h4 style="margin:0 0 8px">Ringkasan Cepat</h4>
+          <div class="small">Gudang: 2 lokasi • Tim lapangan: 24 orang • Sertifikasi: Organik (dalam proses)</div>
+        </div>
+
+        <div style="margin-top:auto;display:flex;gap:8px;align-items:center">
+          <div style="flex:1">
+            <div class="small">Performa Bulanan</div>
+            <div style="font-weight:700;font-size:18px">Rp 85.400.000</div>
+            <div class="small">Pendapatan kotor (bulan ini)</div>
+          </div>
+          <div style="width:1px;height:64px;background:rgba(255,255,255,0.03)"></div>
+          <div style="text-align:center">
+            <div class="small">Tingkat Pengiriman</div>
+            <div style="font-weight:700;font-size:18px">98%</div>
+            <div class="small">On-time</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="card grid-2">
+      <div>
+        <h2>Tentang Perusahaan</h2>
+        <p class="muted">Pioneer Nilam Oil Project berdiri sejak 2016, berfokus pada budidaya daun Nilam dengan teknik ramah lingkungan. Kami menggabungkan pengetahuan tradisional dan praktik agronomi modern untuk menghasilkan aroma nilam yang konsisten dan berkualitas tinggi.</p>
+
+        <div style="margin-top:12px" class="services">
+          <div class="service">
+            <strong>Budidaya & Perawatan</strong>
+            <div class="small">Pendekatan ilmiah untuk pertumbuhan daun optimal.</div>
+          </div>
+          <div class="service">
+            <strong>Pengolahan & Pengeringan</strong>
+            <div class="small">Proses pengeringan terkontrol untuk mempertahankan aroma.</div>
+          </div>
+          <div class="service">
+            <strong>Ekspor & Distribusi</strong>
+            <div class="small">Jaringan distribusi domestik dan internasional.</div>
+          </div>
+          <div class="service">
+            <strong>Kemitraan R&D</strong>
+            <div class="small">Kolaborasi pengembangan ekstrak dan kualitas.</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2>Keunggulan Kami</h2>
+        <ul class="small" style="line-height:1.6;margin-top:10px">
+          <li>Kontrol kualitas ketat pada setiap batch.</li>
+          <li>Sertifikasi pengolahan dan dokumentasi traceability.</li>
+          <li>Praktik ramah lingkungan & penggunaan pupuk organik.</li>
+          <li>Tim agronomis berpengalaman dan fasilitas pengolahan modern.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="dashboard" class="card" style="margin-top:18px"><h2>🌱 Dashboard Perusahaan</h2><div class="chart"><div class="bar" style="height:70%"></div><div class="bar" style="height:60%"></div><div class="bar" style="height:80%"></div><div class="bar" style="height:50%"></div><div class="bar" style="height:90%"></div></div> class="card" style="margin-top:18px">
+      <h3>🌱 Dashboard Perusahaan</h3>
+      <p class="muted">Halaman ini menampilkan angka-angka penting untuk presentasi profesional. Untuk data real-time, hubungkan ke backend/analytics.</p>
+
+      <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+        <div style="flex:1;min-width:220px;padding:12px;border-radius:10px;background:var(--card)">
+          <div class="small">Total Produksi (tahun)</div>
+          <div style="font-weight:700;font-size:18px;margin-top:6px">12.400 kg</div>
+        </div>
+        <div style="flex:1;min-width:220px;padding:12px;border-radius:10px;background:var(--card)">
+          <div class="small">Pendapatan Kotor (year-to-date)</div>
+          <div style="font-weight:700;font-size:18px;margin-top:6px">Rp 1.020.000.000</div>
+        </div>
+        <div style="flex:1;min-width:220px;padding:12px;border-radius:10px;background:var(--card)">
+          <div class="small">Rata-rata Harga / kg</div>
+          <div style="font-weight:700;font-size:18px;margin-top:6px">Rp 82.000</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vision" class="card" style="margin-top:18px"><h2>🌱 Visi & Misi Hijau</h2><p class="muted">Menjadi pelopor produksi Nilam berkelanjutan yang memberi manfaat bagi lingkungan dan masyarakat.</p><ul class="small"><li>✔ Mengurangi jejak karbon</li><li>✔ Pertanian organik</li><li>✔ Memberdayakan petani lokal</li></ul></section>
+
+<section id="contact" class="footer-grid" style="margin-top:18px">
+      <div class="card contact">
+        <h2>Kontak & Permintaan Penawaran</h2>
+        <p class="muted">Isi formulir di bawah untuk permintaan penawaran atau pertanyaan kerjasama.</p>
+        <form onsubmit="event.preventDefault();alert('Terima kasih — formulir ini hanya demo di situs statis.')">
+          <input placeholder="Nama Perusahaan / Anda" required />
+          <input placeholder="Email" type="email" required />
+          <input placeholder="Telepon / WA" />
+          <textarea placeholder="Pesan / Kebutuhan"></textarea>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+            <button class="btn btn-ghost" type="button" onclick="location.href='#'">Unduh Profil</button>
+          </div>
+        </form>
+      </div>
+
+      <aside class="card">
+        <h4>Informasi Perusahaan</h4>
+        <div class="small" style="margin-top:8px">
+          <strong>Pioneer Nilam Oil Project</strong><br>
+          Jl. Contoh No. 12, Kabupaten — Provinsi<br>
+          Email: info@pioneernilamoil.example<br>
+          Tel: +62 812-3456-7890
+        </div>
+
+        <div style="margin-top:12px">
+          <h5 style="margin:0 0 6px">Jam Operasional</h5>
+          <div class="small">Senin — Jumat: 08:00 — 17:00<br>Sabtu: 08:00 — 13:00</div>
+        </div>
+      </aside>
+    </section>
+
+    <footer>🌿 
+      © Pioneer Nilam Oil Project — Template situs statis. Siap dipublikasikan di GitHub Pages.
+    </footer>
+  </div>
+<!-- Leaf animation -->
+<script>
+const leafContainer=document.createElement('div');leafContainer.style.position='fixed';leafContainer.style.top=0;leafContainer.style.left=0;leafContainer.style.width='100%';leafContainer.style.height='100%';leafContainer.style.pointerEvents='none';document.body.appendChild(leafContainer);
+function createLeaf(){const leaf=document.createElement('div');leaf.innerHTML='🍃';leaf.style.position='absolute';leaf.style.left=Math.random()*100+'%';leaf.style.top='-20px';leaf.style.fontSize=(12+Math.random()*20)+'px';leaf.style.opacity=Math.random();leaf.style.transition='transform 6s linear, top 6s linear';leafContainer.appendChild(leaf);setTimeout(()=>{leaf.style.top='110%';leaf.style.transform='translateX('+((Math.random()*200)-100)+'px) rotate(360deg)';},50);setTimeout(()=>leaf.remove(),6500)}setInterval(createLeaf,1200);
+// Theme toggle
+const btn=document.getElementById('themeToggle');btn.onclick=()=>document.body.classList.toggle('dark');
+</script>
+
+<style>
+body.dark{background:linear-gradient(180deg,#022c22,#064e3b);color:#ecfeff}
+body.dark .card{background:#022c22;border-color:#065f46}
+.service:hover{transform:scale(1.05);transition:.3s}
+@media(max-width:600px){h2{font-size:22px}.hero{grid-template-columns:1fr}}
+</style>
+</body>
+</html>
